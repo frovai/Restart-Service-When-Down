@@ -1,0 +1,7 @@
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=""
+
+#*     */1          *         *         *       root    systemctl restart service-voce-quer
+*      *            *         *         *       root    export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin: && /home/ubuntu/service-monitor.sh >> /home/ubuntu/service-monitor-cron.log 2>&1
+#*      *            *        *          *      root    echo "teste" >> /home/ubuntu/script-restart.log
